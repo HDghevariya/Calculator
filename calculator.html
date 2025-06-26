@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        form{
+            border: 1px solid black;
+            padding: 20px;
+            width: 400px;
+            background-color: lightblue;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        input[type="button"]{
+            background-color: lightcyan;
+            border: none;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="fno">Enter 1ts No :</label>
+        <input type="text" name="f1no" id="fno"><br><br>
+        <label for="sno">Enter 2nd No :</label>
+        <input type="text" name="s1no" id="sno"><br><br>
+        <div>
+            <input type="button" onclick="sum()" value="+">
+            <input type="button" onclick="sub()" value="-">
+            <input type="button" onclick="multi()" value="*">
+            <input type="button" onclick="div()" value="/">
+        </div><br>
+        <input type="reset" value="reset">
+        <br><br>   
+        <label for="ans">Ans :</label>
+        <input type="text" name="ans" id="display" disabled>
+    </form>
+
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
